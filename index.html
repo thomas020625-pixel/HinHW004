@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>台中生存遊戲場地一覽</title>
+  <style>
+    /* 基本樣式（內嵌於同一檔案）*/
+    :root{
+      --bg: #fbfbfb;
+      --card: #ffffff;
+      --muted: #6b6b6b;
+      --accent: #e9f0f6;
+      --border: #e6e6e6;
+      --radius: 10px;
+      --max-width: 1100px;
+      font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+      color-scheme: light;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: #222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width: var(--max-width);
+      margin: 36px auto;
+      padding: 24px;
+    }
+
+    header.site-header{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .logo{
+      width:48px;
+      height:48px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#f6fbff,#eef6fa);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      color:#557;
+      border:1px solid var(--border);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03) inset;
+    }
+
+    header h1{
+      margin:0;
+      font-size:18px;
+      font-weight:600;
+      color:#1f2b32;
+    }
+    header p{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .content{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:14px;
+      box-shadow: 0 2px 8px rgba(16,24,32,0.03);
+    }
+
+    .intro{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .meta{
+      font-size:20px;
+      color:var(--muted);
+    }
+
+    /* iframe 容器 */
+    .iframe-wrap{
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius:10px;
+      overflow:hidden;
+      border:1px solid var(--border);
+    }
+
+    /* footer */
+    footer.site-footer{
+      margin-top:22px;
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* 響應式 */
+    @media (min-width:800px){
+      .content{
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* small helpers */
+    .muted{ color: var(--muted); font-size:13px }
+    a.simple{
+      color: #46607a;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(70,96,122,0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header" role="banner">
+      <div class="brand" aria-hidden="true">
+        
+      </div>
+      <div>
+        <h3>台中生存遊戲場地一覽</h3>
+        <p class="muted"></p>
+      </div>
+    </header>
+
+    <main class="content" role="main" aria-label="主要內容">
+      <section class="card intro" aria-labelledby="intro-title">
+        <div>
+          <h2 id="intro-title" style="margin:0; font-size:16px;">何謂生存遊戲？</h2>
+          <p class="meta">生存遊戲（Survival Game / Airsoft）是一種模擬戰術對抗的戶外活動，玩家使用外型與操作接近真實武器但以塑膠 BB 彈為彈藥的氣動槍進行對戰。遊戲強調戰術運用、團隊合作與臨場反應，玩家在安全規範下透過不同場景與任務模式（如佔點、護送、殲滅戰等）體驗策略與刺激感。</p>
+          <img src ="image1.jpg" height="390" width="632">
+          <p class="meta">台中則是生存遊戲的集中地，不管是販售和維修氣槍的槍店，還是提供不同種類的人身裝備的裝備店家，甚至是讓玩家大殺四方的場地，在台中都一應俱全，可說是配套十分完善。</p>
+        </div>
+      </section>
+
+      <section class="card iframe-wrap" aria-labelledby="embed-title">
+        <div style="padding:12px 14px; border-bottom:1px solid var(--border); background:transparent;">
+          <strong id="embed-title" style="font-size:15px;">台中「生存」地圖</strong>
+          <p class="muted" style="margin:6px 0 0;"></p>
+        </div>
+
+        <!-- 你提供的 iframe 嵌入碼（保留原樣） -->
+        <div style="padding:0; margin:0;">
+          <iframe
+            src="https://uploads.knightlab.com/storymapjs/be90e491522570f3a2e7570672012246/wargame/index.html"
+            frameborder="0"
+            width="100%"
+            height="800"
+            title="嵌入故事地圖"
+            loading="lazy"
+            style="display:block; border:0;">
+          </iframe>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="notes-title">
+        <h3 id="notes-title" style="margin:0 0 8px 0; font-size:15px;">備註</h3>
+        <ul style="margin:0; padding-left:18px; color:var(--muted);">
+          <p class="meta">411154133 黃凱軒製作</p>
+          <img src ="image2.jpg" height="250" width="400">
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      © <span id="year"></span>  — 台中生存遊戲場地一覽
+    </footer>
+  </div>
+
+  <script>
+    // 自動填入年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
